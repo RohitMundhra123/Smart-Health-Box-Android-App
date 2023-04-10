@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_team"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TeamActivity"
+    android:background="@drawable/bgedit1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginTop="427dp"
+        android:textSize="16dp"
+        android:textAlignment="textStart"
+        android:text="Smart health box is a term used to refer to a device that is designed to monitor and track an individual's health status in real-time. These boxes are typically equipped with sensors, connectivity features, and analytics software that enable them to collect, analyze and interpret data about the user's physical activity, vital signs, and other health-related metrics.
+
+Some examples of what a smart health box may include are:
+
+Heart rate and blood pressure monitors
+Oxygen saturation level sensors
+Temperature sensors
+Activity trackers
+Sleep monitors
+Smart health boxes can be useful for individuals who want to keep track of their health status on a regular basis, particularly those with chronic health conditions that require frequent monitoring. The data collected by these devices can be shared with healthcare professionals to help with diagnosis and treatment, and also used to provide personalized recommendations for lifestyle changes that can improve overall health and wellness."
+        android:textColor="@color/accentgreen"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.core.widget.NestedScrollView>

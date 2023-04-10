@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "489116538660",
+    "project_id": "smarthealthbox",
+    "storage_bucket": "smarthealthbox.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:489116538660:android:afe3885949942ffbd845b1",
+        "android_client_info": {
+          "package_name": "com.example.smarthealthbox"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "489116538660-6dguofnstfb0o2r5tiuhfhftoajbaqk6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDSP489fMXD8pIISy_QvLJwW5O6dIwhXQg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "489116538660-6dguofnstfb0o2r5tiuhfhftoajbaqk6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

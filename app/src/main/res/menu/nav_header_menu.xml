@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+<item android:title="Main">
+    <menu>
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:title="Home"/>
+        <item
+            android:id="@+id/nav_entry"
+            android:icon="?attr/actionModeSelectAllDrawable"
+            android:title="Analyze" />
+    </menu>
+</item>
+
+    <item android:title="Profile">
+        <menu>
+            <item
+                android:id="@+id/nav_info"
+                android:icon="@drawable/ic_baseline_person_24"
+                android:title="My Profile"/>
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/common_full_open_on_phone"
+                android:title="Log Out"/>
+        </menu>
+    </item>
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_mail"
+                android:icon="@drawable/ic_baseline_email_24"
+                android:title="Mail"/>
+            <item
+                android:id="@+id/nav_Whatsapp"
+                android:icon="@drawable/chat"
+                android:title="Whatsapp"/>
+            <item
+                android:id="@+id/nav_aboutus"
+                android:icon="@drawable/info"
+                android:title="About Us"/>
+        </menu>
+    </item>
+
+</menu>
