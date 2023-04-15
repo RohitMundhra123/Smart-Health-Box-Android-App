@@ -29,6 +29,7 @@ FloatingActionButton fab;
          @Override
          public void onClick(View view) {
              startActivity(new Intent(TeamActivity.this,HomeActivity.class));
+             finish();
          }
      });
 

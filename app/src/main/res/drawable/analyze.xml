@@ -5,14 +5,14 @@
                 android:width="56dp"
                 android:height="56dp" />
             <corners  android:topLeftRadius="20dp"
-                android:topRightRadius="0dp"
+                android:topRightRadius="20dp"
                 android:bottomLeftRadius="20dp"
-                android:bottomRightRadius="0dp" />
+                android:bottomRightRadius="20dp" />
             <solid
                 android:color="#49C2B9" />
         </shape>
     </item>
     <item
-        android:drawable="@drawable/person"
+        android:drawable="@drawable/analytics"
         android:gravity="center" />
 </layer-list>

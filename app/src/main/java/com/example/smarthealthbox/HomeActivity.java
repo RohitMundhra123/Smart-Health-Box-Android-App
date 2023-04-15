@@ -14,6 +14,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.VideoView;
@@ -38,25 +39,18 @@ public class HomeActivity extends AppCompatActivity {
     FirebaseDatabase firebaseDatabase;
     DatabaseReference reference;
     TextView tv;
-    VideoView videoView;
+    RelativeLayout r1,r2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        videoView=findViewById(R.id.videoview);
-        Uri uri= Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.hey);
-        videoView.setVideoURI(uri);
-        videoView.start();
+        TextView t = findViewById(R.id.textHealth);
+        t.setSelected(true);
 
-        videoView.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
-            @Override
-            public void onPrepared(MediaPlayer mp) {
-                mp.setLooping(true);
-            }
-        });
-
-    imageSlider= findViewById(R.id.image_slider);
+        imageSlider= findViewById(R.id.image_slider);
+        r1 = findViewById(R.id.rl1);
+        r2 = findViewById(R.id.rl2);
 
         ArrayList<SlideModel> images=new ArrayList<>();
         images.add(new SlideModel(R.drawable.slide1, null));
@@ -74,7 +68,7 @@ public class HomeActivity extends AppCompatActivity {
             public void onComplete(@NonNull Task<DataSnapshot> task) {
                 if(task.isSuccessful()){
                     DataSnapshot dataSnapshot=task.getResult();
-                    String name="Hi, "+String.valueOf(dataSnapshot.child("name").getValue());
+                    String name="Welcome\n"+String.valueOf(dataSnapshot.child("name").getValue());
                     tv.setText(name);
                 }
             }
@@ -89,6 +83,25 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
+        r1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(HomeActivity.this,EntryActivity.class));
+            }
+        });
+
+        r2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String phoneNumber = "7726021453";
+                String url = "tel:" + phoneNumber;
+
+                Intent intent = new Intent(Intent.ACTION_DIAL);
+                intent.setData(Uri.parse(url));
+                startActivity(intent);
+            }
+        });
+
         nav.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -97,21 +110,27 @@ public class HomeActivity extends AppCompatActivity {
                 switch (id){
                     case R.id.nav_home:
                         startActivity(new Intent(HomeActivity.this,HomeActivity.class));
+                        finish();
                         break;
                     case R.id.nav_logout:
                         startActivity(new Intent(HomeActivity.this,LoginActivity.class));
+                        finish();
                         break;
                     case R.id.nav_info:
                         startActivity(new Intent(HomeActivity.this,InfoActivity.class));
+                        finish();
                         break;
                     case R.id.nav_entry:
                         startActivity(new Intent(HomeActivity.this,EntryActivity.class));
+                        finish();
                         break;
                     case R.id.nav_aboutus:
                         startActivity(new Intent(HomeActivity.this,TeamActivity.class));
+                        finish();
                         break;
                     case R.id.nav_mail:
                         startActivity(new Intent(Intent.ACTION_SENDTO, Uri.parse("mailto:abc@gmail.com")));
+                        finish();
                         break;
                     case R.id.nav_Whatsapp:
                         String phoneNumber = "7726021453";
@@ -128,6 +147,8 @@ public class HomeActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
+
         finish();
+
     }
 }

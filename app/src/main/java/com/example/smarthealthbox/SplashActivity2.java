@@ -23,7 +23,7 @@ import com.google.firebase.database.ValueEventListener;
 
 public class SplashActivity2 extends AppCompatActivity {
 
-    private static int Splash=3000;
+    private static int Splash=5000;
     FirebaseDatabase firebaseDatabase;
     DatabaseReference reference;
     TextView tv;
@@ -47,6 +47,7 @@ public class SplashActivity2 extends AppCompatActivity {
                     String name="Welcome "+String.valueOf(dataSnapshot.child("name").getValue());
                     Animation animation= AnimationUtils.loadAnimation(SplashActivity2.this,R.anim.anim);
                     tv.setText(name);
+                    iv.setImageResource(R.drawable.logonobg);
                     tv.startAnimation(animation);
                     iv.startAnimation(animation);
                 }

@@ -5,10 +5,14 @@
       <map>
         <entry key="..\:/Users/KIIT/AndroidStudioProjects/SmartHealthBox2/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2265" />
         <entry key="..\:/Users/KIIT/AndroidStudioProjects/SmartHealthBox2/app/src/main/res/drawable/age.xml" value="0.1755" />
+        <entry key="..\:/Users/KIIT/AndroidStudioProjects/SmartHealthBox2/app/src/main/res/drawable/age1.xml" value="0.329" />
         <entry key="..\:/Users/KIIT/AndroidStudioProjects/SmartHealthBox2/app/src/main/res/drawable/ageno.xml" value="0.336" />
+        <entry key="..\:/Users/KIIT/AndroidStudioProjects/SmartHealthBox2/app/src/main/res/drawable/analytics.xml" value="0.329" />
+        <entry key="..\:/Users/KIIT/AndroidStudioProjects/SmartHealthBox2/app/src/main/res/drawable/analyze.xml" value="0.329" />
         <entry key="..\:/Users/KIIT/AndroidStudioProjects/SmartHealthBox2/app/src/main/res/drawable/background1.xml" value="0.336" />
         <entry key="..\:/Users/KIIT/AndroidStudioProjects/SmartHealthBox2/app/src/main/res/drawable/backgrounf.xml" value="0.259" />
         <entry key="..\:/Users/KIIT/AndroidStudioProjects/SmartHealthBox2/app/src/main/res/drawable/bp.xml" value="0.3635" />
+        <entry key="..\:/Users/KIIT/AndroidStudioProjects/SmartHealthBox2/app/src/main/res/drawable/bp1.xml" value="0.329" />
         <entry key="..\:/Users/KIIT/AndroidStudioProjects/SmartHealthBox2/app/src/main/res/drawable/btn_bg.xml" value="0.1075" />
         <entry key="..\:/Users/KIIT/AndroidStudioProjects/SmartHealthBox2/app/src/main/res/drawable/calendar.xml" value="0.242" />
         <entry key="..\:/Users/KIIT/AndroidStudioProjects/SmartHealthBox2/app/src/main/res/drawable/chat.xml" value="0.242" />
@@ -17,7 +21,9 @@
         <entry key="..\:/Users/KIIT/AndroidStudioProjects/SmartHealthBox2/app/src/main/res/drawable/device.xml" value="0.3325" />
         <entry key="..\:/Users/KIIT/AndroidStudioProjects/SmartHealthBox2/app/src/main/res/drawable/female.xml" value="0.1755" />
         <entry key="..\:/Users/KIIT/AndroidStudioProjects/SmartHealthBox2/app/src/main/res/drawable/glucose.xml" value="0.3635" />
+        <entry key="..\:/Users/KIIT/AndroidStudioProjects/SmartHealthBox2/app/src/main/res/drawable/glucose1.xml" value="0.329" />
         <entry key="..\:/Users/KIIT/AndroidStudioProjects/SmartHealthBox2/app/src/main/res/drawable/height.xml" value="0.1755" />
+        <entry key="..\:/Users/KIIT/AndroidStudioProjects/SmartHealthBox2/app/src/main/res/drawable/height1.xml" value="0.329" />
         <entry key="..\:/Users/KIIT/AndroidStudioProjects/SmartHealthBox2/app/src/main/res/drawable/heightno.xml" value="0.336" />
         <entry key="..\:/Users/KIIT/AndroidStudioProjects/SmartHealthBox2/app/src/main/res/drawable/home.xml" value="0.242" />
         <entry key="..\:/Users/KIIT/AndroidStudioProjects/SmartHealthBox2/app/src/main/res/drawable/ic_baseline_edit_24.xml" value="0.3635" />
@@ -25,6 +31,7 @@
         <entry key="..\:/Users/KIIT/AndroidStudioProjects/SmartHealthBox2/app/src/main/res/drawable/ic_baseline_local_phone_24.xml" value="0.3635" />
         <entry key="..\:/Users/KIIT/AndroidStudioProjects/SmartHealthBox2/app/src/main/res/drawable/ic_baseline_menu_24.xml" value="0.336" />
         <entry key="..\:/Users/KIIT/AndroidStudioProjects/SmartHealthBox2/app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.329" />
+        <entry key="..\:/Users/KIIT/AndroidStudioProjects/SmartHealthBox2/app/src/main/res/drawable/ic_baseline_person_241.xml" value="0.329" />
         <entry key="..\:/Users/KIIT/AndroidStudioProjects/SmartHealthBox2/app/src/main/res/drawable/ic_baseline_security_24.xml" value="0.3635" />
         <entry key="..\:/Users/KIIT/AndroidStudioProjects/SmartHealthBox2/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2265" />
         <entry key="..\:/Users/KIIT/AndroidStudioProjects/SmartHealthBox2/app/src/main/res/drawable/ic_menu_camera.xml" value="0.3635" />
@@ -36,16 +43,24 @@
         <entry key="..\:/Users/KIIT/AndroidStudioProjects/SmartHealthBox2/app/src/main/res/drawable/language.xml" value="0.3635" />
         <entry key="..\:/Users/KIIT/AndroidStudioProjects/SmartHealthBox2/app/src/main/res/drawable/linearrlayout.xml" value="0.3325" />
         <entry key="..\:/Users/KIIT/AndroidStudioProjects/SmartHealthBox2/app/src/main/res/drawable/login_btn.xml" value="0.3635" />
+        <entry key="..\:/Users/KIIT/AndroidStudioProjects/SmartHealthBox2/app/src/main/res/drawable/mail.xml" value="0.329" />
         <entry key="..\:/Users/KIIT/AndroidStudioProjects/SmartHealthBox2/app/src/main/res/drawable/male.xml" value="0.1755" />
+        <entry key="..\:/Users/KIIT/AndroidStudioProjects/SmartHealthBox2/app/src/main/res/drawable/phone.xml" value="0.329" />
+        <entry key="..\:/Users/KIIT/AndroidStudioProjects/SmartHealthBox2/app/src/main/res/drawable/phone12.xml" value="0.329" />
+        <entry key="..\:/Users/KIIT/AndroidStudioProjects/SmartHealthBox2/app/src/main/res/drawable/phone123.xml" value="0.329" />
         <entry key="..\:/Users/KIIT/AndroidStudioProjects/SmartHealthBox2/app/src/main/res/drawable/phoneno.xml" value="0.336" />
         <entry key="..\:/Users/KIIT/AndroidStudioProjects/SmartHealthBox2/app/src/main/res/drawable/profile.xml" value="0.329" />
         <entry key="..\:/Users/KIIT/AndroidStudioProjects/SmartHealthBox2/app/src/main/res/drawable/pulse.xml" value="0.3635" />
+        <entry key="..\:/Users/KIIT/AndroidStudioProjects/SmartHealthBox2/app/src/main/res/drawable/pulse1.xml" value="0.329" />
+        <entry key="..\:/Users/KIIT/AndroidStudioProjects/SmartHealthBox2/app/src/main/res/drawable/security.xml" value="0.329" />
         <entry key="..\:/Users/KIIT/AndroidStudioProjects/SmartHealthBox2/app/src/main/res/drawable/side_nav_bar.xml" value="0.3635" />
         <entry key="..\:/Users/KIIT/AndroidStudioProjects/SmartHealthBox2/app/src/main/res/drawable/smoke.xml" value="0.1755" />
         <entry key="..\:/Users/KIIT/AndroidStudioProjects/SmartHealthBox2/app/src/main/res/drawable/smokeno.xml" value="0.336" />
         <entry key="..\:/Users/KIIT/AndroidStudioProjects/SmartHealthBox2/app/src/main/res/drawable/spo2.xml" value="0.3635" />
+        <entry key="..\:/Users/KIIT/AndroidStudioProjects/SmartHealthBox2/app/src/main/res/drawable/spo21.xml" value="0.329" />
         <entry key="..\:/Users/KIIT/AndroidStudioProjects/SmartHealthBox2/app/src/main/res/drawable/trans.xml" value="0.1755" />
         <entry key="..\:/Users/KIIT/AndroidStudioProjects/SmartHealthBox2/app/src/main/res/drawable/weight.xml" value="0.1755" />
+        <entry key="..\:/Users/KIIT/AndroidStudioProjects/SmartHealthBox2/app/src/main/res/drawable/weight1.xml" value="0.329" />
         <entry key="..\:/Users/KIIT/AndroidStudioProjects/SmartHealthBox2/app/src/main/res/drawable/weightno.xml" value="0.336" />
         <entry key="..\:/Users/KIIT/AndroidStudioProjects/SmartHealthBox2/app/src/main/res/drawable/widgets.xml" value="0.3635" />
         <entry key="..\:/Users/KIIT/AndroidStudioProjects/SmartHealthBox2/app/src/main/res/layout-w1240dp/content_scrolling.xml" value="0.37890625" />
@@ -55,12 +70,12 @@
         <entry key="..\:/Users/KIIT/AndroidStudioProjects/SmartHealthBox2/app/src/main/res/layout/activity_edit2.xml" value="0.24283882000855067" />
         <entry key="..\:/Users/KIIT/AndroidStudioProjects/SmartHealthBox2/app/src/main/res/layout/activity_entry.xml" value="0.25" />
         <entry key="..\:/Users/KIIT/AndroidStudioProjects/SmartHealthBox2/app/src/main/res/layout/activity_entry2.xml" value="0.33" />
-        <entry key="..\:/Users/KIIT/AndroidStudioProjects/SmartHealthBox2/app/src/main/res/layout/activity_home.xml" value="0.22" />
+        <entry key="..\:/Users/KIIT/AndroidStudioProjects/SmartHealthBox2/app/src/main/res/layout/activity_home.xml" value="0.2" />
         <entry key="..\:/Users/KIIT/AndroidStudioProjects/SmartHealthBox2/app/src/main/res/layout/activity_info.xml" value="0.25" />
         <entry key="..\:/Users/KIIT/AndroidStudioProjects/SmartHealthBox2/app/src/main/res/layout/activity_information.xml" value="0.25" />
         <entry key="..\:/Users/KIIT/AndroidStudioProjects/SmartHealthBox2/app/src/main/res/layout/activity_information2.xml" value="0.25" />
         <entry key="..\:/Users/KIIT/AndroidStudioProjects/SmartHealthBox2/app/src/main/res/layout/activity_login.xml" value="0.25" />
-        <entry key="..\:/Users/KIIT/AndroidStudioProjects/SmartHealthBox2/app/src/main/res/layout/activity_login2.xml" value="0.22" />
+        <entry key="..\:/Users/KIIT/AndroidStudioProjects/SmartHealthBox2/app/src/main/res/layout/activity_login2.xml" value="0.29379485014774165" />
         <entry key="..\:/Users/KIIT/AndroidStudioProjects/SmartHealthBox2/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/Users/KIIT/AndroidStudioProjects/SmartHealthBox2/app/src/main/res/layout/activity_main2.xml" value="0.25" />
         <entry key="..\:/Users/KIIT/AndroidStudioProjects/SmartHealthBox2/app/src/main/res/layout/activity_main3.xml" value="0.2975630611372381" />

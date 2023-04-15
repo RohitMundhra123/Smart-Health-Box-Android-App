@@ -21,7 +21,7 @@
         <menu>
             <item
                 android:id="@+id/nav_info"
-                android:icon="@drawable/ic_baseline_person_24"
+                android:icon="@drawable/person"
                 android:title="My Profile"/>
             <item
                 android:id="@+id/nav_logout"
@@ -33,11 +33,11 @@
         <menu>
             <item
                 android:id="@+id/nav_mail"
-                android:icon="@drawable/ic_baseline_email_24"
+                android:icon="@drawable/mail"
                 android:title="Mail"/>
             <item
                 android:id="@+id/nav_Whatsapp"
-                android:icon="@drawable/chat"
+                android:icon="@drawable/whatsapp"
                 android:title="Whatsapp"/>
             <item
                 android:id="@+id/nav_aboutus"

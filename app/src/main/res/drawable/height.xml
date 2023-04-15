@@ -1,4 +1,18 @@
-<vector android:height="24dp" android:viewportHeight="960"
-    android:viewportWidth="960" android:width="24dp" xmlns:android="http://schemas.android.com/apk/res/android">
-    <path android:fillColor="@color/black" android:pathData="M480,840 L320,680l44,-44 86,86L450,238l-86,86 -44,-44 160,-160 160,160 -44,44 -86,-86v484l86,-86 44,44 -160,160Z"/>
-</vector>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <size
+                android:width="56dp"
+                android:height="56dp" />
+            <corners  android:topLeftRadius="20dp"
+                android:topRightRadius="0dp"
+                android:bottomLeftRadius="20dp"
+                android:bottomRightRadius="0dp" />
+            <solid
+                android:color="#49C2B9" />
+        </shape>
+    </item>
+    <item
+        android:drawable="@drawable/height1"
+        android:gravity="center" />
+</layer-list>
