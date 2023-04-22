@@ -90,7 +90,7 @@ public class EntryActivity extends AppCompatActivity {
         device.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(EntryActivity.this,ManualActivity.class));
+                startActivity(new Intent(EntryActivity.this,BluetoothActivity.class));
             }
         });
     }

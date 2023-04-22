@@ -16,11 +16,15 @@
         android:layout_margin="20dp"
         android:layout_marginTop="427dp"
         android:textSize="16dp"
-        android:textAlignment="textStart"
-        android:text="
-        Smart health box is a term used to refer to a device that is designed
-to monitor and track an individual's health status in real-time.
-These boxes are typically equipped with sensors, connectivity features, and analytics software that enable them to collect, analyze and interpret data about the user's physical activity, vital signs, and other health-related metrics.\n\nSome examples of what a smart health box may include are:\n- Heart rate and blood pressure monitors\n- Oxygen saturation level sensors\n- Temperature sensors\n- Activity trackers\n- Sleep monitors\n\nSmart health boxes can be useful for individuals who want to keep track of their health status on a regular basis, particularly those with chronic health conditions that require frequent monitoring. The data collected by these devices can be shared with healthcare professionals to help with diagnosis and treatment, and also used to provide personalized recommendations for lifestyle changes that can improve overall health and wellness."
+        android:layout_gravity="center_horizontal"
+        android:justificationMode="inter_word"
+        android:text="\n\t\t\t\t\t\t\tWe are in 21st Century. This is an era of Science and technology where most of the thing can happen with a touch and to contribute to this era we proposed to make a Project named “Smart Health Box”. This is a project aimed at predicting heart disease using machine learning algorithms. This project consists of a mobile application that allows users to enter their health data manually or through a hardware device built by us. We then use our proprietary machine learning API to analyze the data and predict the likelihood of heart disease for each individual. This project has the potential to revolutionize healthcare by making people easily accessible to personalized health information.
+\n\n\n\t\t\t\t\t\t
+The Smart Health Box project is a unique solution to the problem of heart disease, the leading cause of death worldwide. Using the power of machine learning algorithms, we have developed a system that can some how predict heart disease risk based on a user's individual health data. The system is easy to use and can be accessed through a mobile app and is accessible to a wide range of users. This project has the potential to improve public health by empowering people to take control of their health and make informed decisions about lifestyle choices.
+\n\n\n\t\t\t\t\t\t
+Heart disease is a leading cause of death worldwide, and it is becoming more common. The World Health Organization (WHO) estimates that 17.9 million deaths per year, or 31% of all deaths worldwide, are caused by heart conditions (CVDs). There is an urgent need for novel solutions that can assist people in determining their risk of acquiring CVDs and taking preventive actions. This is because heart disease has a large negative influence on public health.
+\n\n\n\t\t\t\t\t\t
+This requirement will be met by the Smart Health Box project, which will use machine learning algorithms to forecast the possibility of heart disease. The project comprises of a smartphone application that enables users to either manually or through a hardware device we have built enter their health information. Our in-house machine learning API is then used to analyse the data in order to produce customized estimates on the risk of getting heart disease. The Smart Health Box initiative has the potential to transform healthcare and enhance public health results by giving people quick access to personalized health information."
         android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="parent" />
 

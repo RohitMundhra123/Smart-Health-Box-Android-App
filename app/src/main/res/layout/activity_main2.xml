@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity2"
     android:id="@+id/drawer"
-    android:background="@drawable/bgedit1">
+    android:background="@color/white">
 
 
     <RelativeLayout
@@ -16,7 +16,7 @@
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#3A6971"
+        android:background="#49C2B9"
         android:id="@+id/topApp"
         >
 
@@ -36,52 +36,17 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_alignParentTop="true"
-            android:layout_marginTop="60dp">
-
-            <TextView
-                android:id="@+id/textView"
-                android:layout_width="221dp"
-                android:layout_height="94dp"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="55dp"
-                android:layout_marginEnd="50dp"
-                android:text="Smart Health Box"
-                android:textColor="@color/table1"
-                android:textSize="35sp"
-                android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.0" />
-
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="5dp"
-                android:text="Health is Wealth"
-                android:textColor="@color/primaryblue"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView"
-                app:layout_constraintVertical_bias="0.0" />
+            android:layout_marginTop="55dp">
 
             <ImageView
                 android:id="@+id/imageView"
                 android:layout_width="191dp"
                 android:layout_height="140dp"
-                android:layout_marginTop="40dp"
-                android:layout_marginEnd="10dp"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="100dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.0"
@@ -292,7 +257,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView2"
+                app:layout_constraintTop_toBottomOf="@+id/imageView"
                 app:layout_constraintVertical_bias="1.0">
 
                 <androidx.cardview.widget.CardView
@@ -317,8 +282,7 @@
                             android:layout_marginTop="10dp"
                             android:text="Pulse Rate"
                             android:textColor="@color/primaryblue"
-                            android:textSize="24sp"
-                            />
+                            android:textSize="24sp" />
 
                         <TextView
                             android:id="@+id/pulserate"
@@ -379,13 +343,14 @@
                 android:id="@+id/analyze"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:text="Analyze"
+                android:layout_marginTop="30dp"
                 android:background="@drawable/btn_bg"
-                android:textColor="#FFFF00"
+                android:text="Analyze"
+                android:textColor="#FFFFFF"
                 android:textSize="24dp"
                 android:textStyle="bold"
-                app:backgroundTint="#2A8E00"
+                android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
+                app:backgroundTint="#49C3B9"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"

@@ -26,6 +26,7 @@
                 android:layout_height="?attr/actionBarSize"
                 app:navigationIcon="@drawable/ic_baseline_menu_24"
                 app:title="My Profile"
+                app:titleTextColor="@color/black"
                 >
 
             </com.google.android.material.appbar.MaterialToolbar>

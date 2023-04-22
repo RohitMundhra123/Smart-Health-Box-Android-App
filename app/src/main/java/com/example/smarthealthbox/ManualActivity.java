@@ -33,8 +33,8 @@ import java.util.HashMap;
 
 public class ManualActivity extends AppCompatActivity {
 
-    EditText edpulse,edglucose, edblood,edspo,edblooddown;
-    Button btn1,btn2;
+    EditText edpulse, edglucose, edblood, edspo, edblooddown;
+    Button btn1, btn2;
     FirebaseUser fuser;
     ProgressDialog progressDialog;
     String userID;
@@ -62,21 +62,21 @@ public class ManualActivity extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 int id = item.getItemId();
                 drawer.closeDrawer(GravityCompat.START);
-                switch (id){
+                switch (id) {
                     case R.id.nav_home:
-                        startActivity(new Intent(ManualActivity.this,HomeActivity.class));
+                        startActivity(new Intent(ManualActivity.this, HomeActivity.class));
                         finish();
                         break;
                     case R.id.nav_logout:
-                        startActivity(new Intent(ManualActivity.this,LoginActivity.class));
+                        startActivity(new Intent(ManualActivity.this, LoginActivity.class));
                         finish();
                         break;
                     case R.id.nav_manual:
-                        startActivity(new Intent(ManualActivity.this,ManualActivity.class));
+                        startActivity(new Intent(ManualActivity.this, ManualActivity.class));
                         finish();
                         break;
                     case R.id.nav_device:
-                        startActivity(new Intent(ManualActivity.this,EntryActivity.class));
+                        startActivity(new Intent(ManualActivity.this, EntryActivity.class));
                         finish();
                         break;
                 }
@@ -84,9 +84,9 @@ public class ManualActivity extends AppCompatActivity {
             }
         });
 
-        imageSlider= findViewById(R.id.image_slider);
+        imageSlider = findViewById(R.id.image_slider);
 
-        ArrayList<SlideModel> images=new ArrayList<>();
+        ArrayList<SlideModel> images = new ArrayList<>();
         images.add(new SlideModel(R.drawable.bloodpressure, null));
         images.add(new SlideModel(R.drawable.pulserate, null));
         images.add(new SlideModel(R.drawable.spo2level, null));
@@ -95,18 +95,13 @@ public class ManualActivity extends AppCompatActivity {
         imageSlider.setImageList(images, ScaleTypes.CENTER_CROP);
 
         edpulse = findViewById(R.id.editTextGPulse);
-        edpulse.setFilters(new InputFilter[] { filter });
         edglucose = findViewById(R.id.editTextGlucose);
-        edglucose.setFilters(new InputFilter[] { filter });
         edblood = findViewById(R.id.editTextBp);
-        edblood.setFilters(new InputFilter[] { filter });
         edspo = findViewById(R.id.editTextspo);
-        edspo.setFilters(new InputFilter[] { filter });
         edblooddown = findViewById(R.id.editTextBpdown);
-        edblooddown.setFilters(new InputFilter[] { filter });
         btn1 = findViewById(R.id.buttonSubmit);
         btn2 = findViewById(R.id.buttonBack);
-        progressDialog=new ProgressDialog(this);
+        progressDialog = new ProgressDialog(this);
         firebaseDatabase = FirebaseDatabase.getInstance();
 
         btn1.setOnClickListener(new View.OnClickListener() {
@@ -119,7 +114,7 @@ public class ManualActivity extends AppCompatActivity {
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(ManualActivity.this,EntryActivity.class));
+                startActivity(new Intent(ManualActivity.this, EntryActivity.class));
             }
         });
     }
@@ -130,10 +125,10 @@ public class ManualActivity extends AppCompatActivity {
         String pulse = edpulse.getText().toString();
         String glucose = edglucose.getText().toString();
         String bpdown = edblooddown.getText().toString();
-        int b=Integer.parseInt(blood);
-        int s=Integer.parseInt(spo);
-        int p=Integer.parseInt(pulse);
-        int g=Integer.parseInt(glucose);
+        int b = Integer.parseInt(blood);
+        int s = Integer.parseInt(spo);
+        int p = Integer.parseInt(pulse);
+        int g = Integer.parseInt(glucose);
         if (blood.length() == 0) {
             edblood.setError("Field Empty");
         } else if (spo.length() == 0) {
@@ -142,55 +137,41 @@ public class ManualActivity extends AppCompatActivity {
             edpulse.setError("Field Empty");
         } else if (bpdown.length() == 0) {
             edblooddown.setError("Field Empty");
-        }else if (glucose.length() == 0) {
+        } else if (glucose.length() == 0) {
             edglucose.setError("Field Empty");
-        }
-        else {
-            if(s>=100){
+        } else {
+            if (s > 100) {
                 edspo.setError("Invalid SPO2 Percentage");
-            }
-            else {
+            } else {
                 progressDialog.setMessage("Please Wait");
                 progressDialog.setTitle("Submitting");
                 progressDialog.setCanceledOnTouchOutside(false);
                 progressDialog.show();
 
-                saveInfo(blood, spo, pulse, glucose,bpdown);
+                saveInfo(blood, spo, pulse, glucose, bpdown);
                 progressDialog.dismiss();
                 Toast.makeText(getApplicationContext(), "Data Saved", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(ManualActivity.this, MainActivity2.class));
             }
         }
-}
+    }
 
     private void saveInfo(String blood, String spo, String pulse, String glucose, String bpdown) {
-        String uid=  FirebaseAuth.getInstance().getCurrentUser().getUid();
+        String uid = FirebaseAuth.getInstance().getCurrentUser().getUid();
         reference = firebaseDatabase.getReference("Health");
-        HashMap<String, String> userMap=new HashMap<String, String>();
-        userMap.put("blood pressure",blood);
-        userMap.put("bp down",bpdown);
-        userMap.put("spo2",spo);
-        userMap.put("pulse rate",pulse);
-        userMap.put("glucose level",glucose);
+        HashMap<String, String> userMap = new HashMap<String, String>();
+        userMap.put("blood pressure", blood);
+        userMap.put("bp down", bpdown);
+        userMap.put("spo2", spo);
+        userMap.put("pulse rate", pulse);
+        userMap.put("glucose level", glucose);
 
         reference.child(uid).setValue(userMap);
     }
+
     @Override
     public void onBackPressed() {
-        startActivity(new Intent(ManualActivity.this,EntryActivity.class));
+        startActivity(new Intent(ManualActivity.this, EntryActivity.class));
         finish();
     }
-
-    InputFilter filter = new InputFilter() {
-        public CharSequence filter(CharSequence source, int start, int end,
-                                   Spanned dest, int dstart, int dend) {
-            // Only allow digits
-            for (int i = start; i < end; i++) {
-                if (!Character.isDigit(source.charAt(i))) {
-                    return "";
-                }
-            }
-            return null;
-        }
-    };
 }
