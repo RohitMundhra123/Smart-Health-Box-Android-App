@@ -252,17 +252,12 @@ public class TerminalFragment extends Fragment implements ServiceConnection, Ser
             String uid = FirebaseAuth.getInstance().getCurrentUser().getUid();
 
             reference = firebaseDatabase.getReference("Health");
-            HashMap<String, String> userMap = new HashMap<String, String>();
-            userMap.put("temperature", sensor1Value);
-            userMap.put("spo2", sensor2Value);
-            userMap.put("pulse rate", sensor3Value);
-
-            reference.child(uid).setValue(userMap);
             // display the sensor values in the chat
-            String chatMessage = "\n\n\nSensor 1: " + sensor1Value + "\n Sensor 2: " + sensor2Value + "\n Sensor 3: " + sensor3Value + uid;
+            String chatMessage = "\n\n\nSensor 1: " + sensor1Value + "\n Sensor 2: " + sensor2Value + "\n Sensor 3: " + sensor3Value;
             receiveText.append(chatMessage);
 
-         //   saveInfo(sensor1Value , sensor2Value, sensor3Value);
+
+         //  saveInfo(sensor1Value , sensor2Value, sensor3Value);
         }
     }
 
