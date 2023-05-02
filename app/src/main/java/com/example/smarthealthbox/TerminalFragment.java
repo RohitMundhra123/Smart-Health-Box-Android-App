@@ -253,9 +253,8 @@ public class TerminalFragment extends Fragment implements ServiceConnection, Ser
 
             reference = firebaseDatabase.getReference("Health");
             // display the sensor values in the chat
-            String chatMessage = "\n\n\nSensor 1: " + sensor1Value + "\n Sensor 2: " + sensor2Value + "\n Sensor 3: " + sensor3Value;
+            String chatMessage = "\n\n\nSensor 1: " + sensor1Value + "\n Sensor 2: " + sensor2Value + "\n Sensor 3: " + sensor3Value +uid;
             receiveText.append(chatMessage);
-
 
          //  saveInfo(sensor1Value , sensor2Value, sensor3Value);
         }
